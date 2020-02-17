@@ -20,7 +20,8 @@ void Queue::enqueue(int data)
     newNode->next=NULL;
     if (isEmpty())
     {
-        f=r=newNode;
+        r=newNode;
+        f=r;
     }
     else
     {
